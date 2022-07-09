@@ -1,13 +1,15 @@
 package io.github.axst;
 
-import lombok.Getter;
+import io.github.axst.client.IAven;
 
-public class ClientCore {
+public class ClientCore implements IAven {
+    @Override
+    public void startClient() {
+        System.out.println("TEST");
+    }
 
-    @Getter
-    public static final ClientCore instance = new ClientCore();
-
-    public void initializeClient() {
-        System.out.println("My First Injection!");
+    @Override
+    public void stopClient() {
+        System.out.println("TEST2");
     }
 }
