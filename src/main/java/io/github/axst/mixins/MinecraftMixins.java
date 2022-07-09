@@ -16,7 +16,7 @@ class MinecraftMixins {
     @SneakyThrows
     @Inject(method = "startGame", at = @At(value = "HEAD"))
     void injectStartGame(CallbackInfo ci) {
-        try (ScanResult scanResult = new ClassGraph().enableAllInfo().scan()) {
+        ScanResult scanResult = new ClassGraph().enableAllInfo().scan(); {
             ClassInfoList iAvenClasses = scanResult.getClassesImplementing("io.github.axst.client.IAven");
             List<Class<?>> iAvenClassRefs = iAvenClasses.loadClasses();
             for (Class<?> iAven : iAvenClassRefs) {
@@ -28,7 +28,7 @@ class MinecraftMixins {
     @SneakyThrows
     @Inject(method = "shutdownMinecraftApplet", at = @At(value = "HEAD"))
     void injectStopGame(CallbackInfo ci) {
-        try (ScanResult scanResult = new ClassGraph().enableAllInfo().scan()) {
+        ScanResult scanResult = new ClassGraph().enableAllInfo().scan(); {
             ClassInfoList iAvenClasses = scanResult.getClassesImplementing("io.github.axst.client.IAven");
             List<Class<?>> iAvenClassRefs = iAvenClasses.loadClasses();
             for (Class<?> iAven : iAvenClassRefs) {
