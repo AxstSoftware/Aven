@@ -1,30 +1,21 @@
 <h1 align="center">
-  <a href="https://github.com/sdxqw/TCL-Java">TCL-Java</a>
+  <a href="https://github.com/sdxqw/Aven">Aven</a>
 </h1>
 
-<h4 align="center">Tweaker class based in Gradle.</h4>
+<h4 align="center">My idea is to make a LibClient to help other clients.</h4>
 
-# Start using TCL-Java
-Please check our [_**GUIDE**_](https://github.com/AxstSoftware/TCL-Java/wiki)
+# Start using Aven
+Still in dev...
 
-## Key Features
-
-* Good guide!
-* 1.8.9 Optimized tcl for your client!
-* Guide for build it with OptiFine. (LEGAL!)
-* Example client!
-
-# Thanks
-
-thanks to xcfrg for repo!
-thanks to asbyth for repo!
-thanks to TheKodeToad for his repo so i could fix mine!
+# What's Aven use?
+Aven use [TCL-Java](https://github.com/AxstSoftware/TCL-Java)
 
 ## Contributing
 
-Want to help improve TCL-Java?, but how?:
+Want to help improve Aven?, but how?:
 
-* By making an fork of the project
+* By making an Pull requests
+* By making an Issues
 * Sharing this repo
 * Help improve the guide
 
