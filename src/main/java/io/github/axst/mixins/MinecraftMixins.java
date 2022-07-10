@@ -14,7 +14,7 @@ import java.util.List;
 @Mixin(Minecraft.class)
 class MinecraftMixins {
     @SneakyThrows
-    @Inject(method = "startGame", at = @At(value = "HEAD"))
+    @Inject(method = "startGame", at = @At(value = "RETURN"))
     void injectStartGame(CallbackInfo ci) {
         ScanResult scanResult = new ClassGraph().enableAllInfo().scan(); {
             ClassInfoList iAvenClasses = scanResult.getClassesImplementing("io.github.axst.client.IAven");
@@ -26,7 +26,7 @@ class MinecraftMixins {
     }
 
     @SneakyThrows
-    @Inject(method = "shutdownMinecraftApplet", at = @At(value = "HEAD"))
+    @Inject(method = "shutdownMinecraftApplet", at = @At(value = "RETURN"))
     void injectStopGame(CallbackInfo ci) {
         ScanResult scanResult = new ClassGraph().enableAllInfo().scan(); {
             ClassInfoList iAvenClasses = scanResult.getClassesImplementing("io.github.axst.client.IAven");

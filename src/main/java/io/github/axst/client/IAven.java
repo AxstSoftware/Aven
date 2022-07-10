@@ -1,7 +1,7 @@
 package io.github.axst.client;
 
 /**
- * Aven interface, extend this class and use these methods
+ * Aven interface, implements this class and use these methods
  * for initialize or stop your client.
  * @author sdxqw
  * @since 0.1
