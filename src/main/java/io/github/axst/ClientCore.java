@@ -1,11 +1,14 @@
 package io.github.axst;
 
 import io.github.axst.client.IAven;
+import io.github.axst.logger.AvenLogger;
+import io.github.axst.logger.type.AvenLoggerType;
 
 public class ClientCore implements IAven {
     @Override
     public void startClient() {
         System.out.println("TEST");
+        AvenLogger.message("test", AvenLoggerType.ERROR);
     }
 
     @Override

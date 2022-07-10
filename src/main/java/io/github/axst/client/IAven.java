@@ -1,22 +1,22 @@
 package io.github.axst.client;
 
 /**
- * Aven interface, implements this class and use these methods
- * for initialize or stop your client.
+ * The <code>IAven</code> class, it's used to initialize or stop your client code
  * @author sdxqw
  * @since 0.1
  */
 public interface IAven {
 
     /**
-     * This void method need to start your code.
+     * Method used for start your client code
      */
     default void startClient() {
         System.out.println("Starting Aven");
     }
 
     /**
-     * This void method need to stop your code.
+     * Method used for stop your client code
+     * @see org.spongepowered.asm.mixin.injection.At At for more infos.
      */
     default void stopClient() {
         System.out.println("Stopping Aven");
