@@ -1,4 +1,4 @@
-package io.github.axst.launch;
+package io.github.axst.dev.launch;
 
 import java.io.File;
 import java.util.ArrayList;

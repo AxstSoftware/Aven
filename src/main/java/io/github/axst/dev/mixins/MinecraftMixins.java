@@ -1,4 +1,4 @@
-package io.github.axst.mixins;
+package io.github.axst.dev.mixins;
 
 import io.github.axst.client.IAven;
 import io.github.classgraph.*;

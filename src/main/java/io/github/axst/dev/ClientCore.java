@@ -1,4 +1,4 @@
-package io.github.axst;
+package io.github.axst.dev;
 
 import io.github.axst.client.IAven;
 import io.github.axst.logger.AvenLogger;
